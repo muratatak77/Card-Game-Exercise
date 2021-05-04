@@ -23,11 +23,14 @@ def join_players_and_dealer
   @players << Player.new(name: dealer_name, type: 'dealer')
   $stdout.puts "  Join #{dealer_name}."
   $stdout.puts "Joined to the game 5 players and dealer."
+  $stdout.puts "=============================================================="
   setup_game
 end
 
 def setup_game
   $stdout.puts "Starting to deal 2 cards per player."
+  $stdout.puts "=============================================================="
+
   @game_engine = GameEngine.new(deck: @deck, players: @players)
   @game_engine.deal()
   print_hands
@@ -37,12 +40,15 @@ end
 def print_hands
   $stdout.puts "Every hand has own cards."
   @players.each do |player|
-    $stdout.puts "  Player #{player.name} - Hand : #{player.hand}"
+    $stdout.puts " #{player.name} - Hand : #{player.hand}"
   end
+  $stdout.puts "=============================================================="
+  
 end
 
 def calc_score
   $stdout.puts "!! Score has been Calculating !!"
+  $stdout.puts "=============================================================="
   @game_engine.calculate_score
   finish
 end
