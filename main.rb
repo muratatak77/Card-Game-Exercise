@@ -30,7 +30,6 @@ end
 def setup_game
   $stdout.puts "Starting to deal 2 cards per player."
   $stdout.puts "=============================================================="
-
   @game_engine = GameEngine.new(deck: @deck, players: @players)
   @game_engine.deal()
   print_hands
@@ -43,7 +42,6 @@ def print_hands
     $stdout.puts " #{player.name} - Hand : #{player.hand}"
   end
   $stdout.puts "=============================================================="
-  
 end
 
 def calc_score
