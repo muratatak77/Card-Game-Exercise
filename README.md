@@ -1,6 +1,6 @@
 # Card-Game-Exercise
 
-This game is designed as 5 players and one dealer.
+This game is designed as 5 players and 1 dealer.
 
 To start the game in the console. 
 
