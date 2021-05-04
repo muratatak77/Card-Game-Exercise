@@ -5,7 +5,6 @@ class Deck
   attr_reader :cards
   def initialize()
     @cards = build
-    $stdout.puts " We generate and shuffle cards : #{@cards} - Count of cards : #{@cards.length}"
   end
 
   def to_deck(rank, suit)
